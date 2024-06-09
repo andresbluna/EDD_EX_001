@@ -1,2 +1,13 @@
 # ninja log v6
 686	1059	1717894086360593969	untitled1	c815562e0cb7bfd8
+8	382	1717904981828655500	CMakeFiles/untitled1.dir/func_mayor_menor.c.o	93f66e5121edc70c
+9	387	1717904981829522974	CMakeFiles/untitled1.dir/porcentaje_vocales.c.o	629f0bb54de1fd00
+8	389	1717904981829071289	CMakeFiles/untitled1.dir/promedio_valores.c.o	516b210934dab019
+9	390	1717904981830014300	CMakeFiles/untitled1.dir/selector_muestra.c.o	1774f99fe1b91603
+10	407	1717904981830378657	CMakeFiles/untitled1.dir/main_function.c.o	3e7712f0adeb5b95
+7	576	1717904981827474528	CMakeFiles/untitled1.dir/listaCircular.c.o	f5f80b85dffc372b
+577	879	1717904982397323008	untitled1	188bd893b149a760
+10	129	1717905025607882594	CMakeFiles/untitled1.dir/listaCircular.c.o	f5f80b85dffc372b
+129	205	1717905025726994039	untitled1	188bd893b149a760
+4	124	1717905235070208866	CMakeFiles/untitled1.dir/listaCircular.c.o	f5f80b85dffc372b
+124	202	1717905235190842974	untitled1	188bd893b149a760
