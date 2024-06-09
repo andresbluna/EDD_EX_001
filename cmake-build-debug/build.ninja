@@ -49,8 +49,8 @@ cmake_ninja_workdir = /Users/imagemaker/CLionProjects/EDD_EX_001/cmake-build-deb
 
 build cmake_object_order_depends_target_untitled1: phony || CMakeFiles/untitled1.dir
 
-build CMakeFiles/untitled1.dir/ListaCircular.c.o: C_COMPILER__untitled1_unscanned_Debug /Users/imagemaker/CLionProjects/EDD_EX_001/ListaCircular.c || cmake_object_order_depends_target_untitled1
-  DEP_FILE = CMakeFiles/untitled1.dir/ListaCircular.c.o.d
+build CMakeFiles/untitled1.dir/listaCircular.c.o: C_COMPILER__untitled1_unscanned_Debug /Users/imagemaker/CLionProjects/EDD_EX_001/listaCircular.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles/untitled1.dir/listaCircular.c.o.d
   FLAGS = -g -std=gnu11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled1.dir
@@ -93,7 +93,7 @@ build CMakeFiles/untitled1.dir/main_function.c.o: C_COMPILER__untitled1_unscanne
 #############################################
 # Link the executable untitled1
 
-build untitled1: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/ListaCircular.c.o CMakeFiles/untitled1.dir/func_mayor_menor.c.o CMakeFiles/untitled1.dir/promedio_valores.c.o CMakeFiles/untitled1.dir/porcentaje_vocales.c.o CMakeFiles/untitled1.dir/selector_muestra.c.o CMakeFiles/untitled1.dir/main_function.c.o
+build untitled1: C_EXECUTABLE_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/listaCircular.c.o CMakeFiles/untitled1.dir/func_mayor_menor.c.o CMakeFiles/untitled1.dir/promedio_valores.c.o CMakeFiles/untitled1.dir/porcentaje_vocales.c.o CMakeFiles/untitled1.dir/selector_muestra.c.o CMakeFiles/untitled1.dir/main_function.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/untitled1.dir
   POST_BUILD = :
