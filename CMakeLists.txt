@@ -6,6 +6,4 @@ set(CMAKE_C_STANDARD 11)
 add_executable(untitled1 listaCircular.c
         func_mayor_menor.c
         promedio_valores.c
-        porcentaje_vocales.c
-        selector_muestra.c
-        main_function.c)
+)

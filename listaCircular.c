@@ -15,7 +15,7 @@ typedef struct Jugador {
 
 // Función para crear nuevo nodo por jugador
 Jugador* crear_jugador(const char* nombre, int juegos_jugados, int sustitucion, int min, int goles) {
-    Jugador* nuevo_jugador = (Jugador*) malloc(sizeof(Jugador));
+    Jugador* nuevo_jugador = (Jugador*) malloc(sizeof(Jugador));//?, averiguar
     if (nuevo_jugador == NULL) {
         fprintf(stderr, "No se pudo asignar memoria\n");
         exit(EXIT_FAILURE);
