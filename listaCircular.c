@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Definimos la estructura del Nodo y puntero al siguiente nodo
+// Definicion estructura nodo y siguiente nodo
 typedef struct Jugador {
     char nombre[50];
     int juegos_jugados;
@@ -10,6 +10,7 @@ typedef struct Jugador {
     int min;
     int goles;
     struct Jugador* sig;
+    struct Jugador* ant;
 } Jugador;
 
 // Función para crear nuevo nodo por jugador
@@ -26,6 +27,7 @@ Jugador* crear_jugador(const char* nombre, int juegos_jugados, int sustitucion, 
     nuevo_jugador->min = min;
     nuevo_jugador->goles = goles;
     nuevo_jugador->sig = NULL;
+    nuevo_jugador->ant = NULL;
     return nuevo_jugador;
 }
 
@@ -61,6 +63,7 @@ Jugador* leer_datafutbol_process(const char* nombredataprocess) {
             abajo = nuevo_jugador;
         } else {
             abajo->sig = nuevo_jugador;
+            nuevo_jugador->ant = abajo;
             abajo = nuevo_jugador;
         }
     }
@@ -68,6 +71,7 @@ Jugador* leer_datafutbol_process(const char* nombredataprocess) {
     // Hacer la lista circular
     if (abajo != NULL) {
         abajo->sig = principal;
+        principal->ant=abajo;
     }
 
     fclose(file);
