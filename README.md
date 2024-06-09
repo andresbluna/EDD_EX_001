@@ -28,7 +28,7 @@ echo Start-Service ssh-agent
 2. **Añadir la clave SSH al ssh-agent**:
    - Ejecuten el siguiente comando en PowerShell:
 
-sh ssh-add C:\Users\su-usuario.ssh\id_rsa
+echo ssh-add C:\Users\su-usuario.ssh\id_rsa
 
 
 ## Paso 4: Copiar la Clave SSH Pública
