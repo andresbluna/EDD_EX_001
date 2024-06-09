@@ -11,7 +11,7 @@
    - En la ventana de PowerShell, ejecuten el siguiente comando:
 
 
-sh ssh-keygen -t rsa -b 4096 -C "su-email@example.com"
+ssh-keygen -t rsa -b 4096 -C "su-email@example.com"
 
    - Cuando se les pregunte dónde guardar la clave, presionen `Enter` para aceptar la ubicación predeterminada (`C:\Users\su-usuario\.ssh\id_rsa`).
    - Luego, se les pedirá que ingresen una frase de contraseña. Pueden dejarlo vacío si no desean usar una frase de contraseña, aunque se recomienda por seguridad.
