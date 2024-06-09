@@ -1,11 +1,6 @@
-cmake_minimum_required(VERSION 3.28)
-project(untitled1 C)
+cmake_minimum_required(VERSION 3.10)
+project(untitled1)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
 
-add_executable(untitled1 listaCircular.c
-        func_mayor_menor.c
-        promedio_valores.c
-        porcentaje_vocales.c
-        selector_muestra.c
-        main_function.c)
+add_executable(untitled1 porcentaje_vocales.c)

@@ -128,78 +128,6 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-func_mayor_menor.obj: func_mayor_menor.c.obj
-.PHONY : func_mayor_menor.obj
-
-# target to build an object file
-func_mayor_menor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/func_mayor_menor.c.obj
-.PHONY : func_mayor_menor.c.obj
-
-func_mayor_menor.i: func_mayor_menor.c.i
-.PHONY : func_mayor_menor.i
-
-# target to preprocess a source file
-func_mayor_menor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/func_mayor_menor.c.i
-.PHONY : func_mayor_menor.c.i
-
-func_mayor_menor.s: func_mayor_menor.c.s
-.PHONY : func_mayor_menor.s
-
-# target to generate assembly for a file
-func_mayor_menor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/func_mayor_menor.c.s
-.PHONY : func_mayor_menor.c.s
-
-listaCircular.obj: listaCircular.c.obj
-.PHONY : listaCircular.obj
-
-# target to build an object file
-listaCircular.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.obj
-.PHONY : listaCircular.c.obj
-
-listaCircular.i: listaCircular.c.i
-.PHONY : listaCircular.i
-
-# target to preprocess a source file
-listaCircular.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.i
-.PHONY : listaCircular.c.i
-
-listaCircular.s: listaCircular.c.s
-.PHONY : listaCircular.s
-
-# target to generate assembly for a file
-listaCircular.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.s
-.PHONY : listaCircular.c.s
-
-main_function.obj: main_function.c.obj
-.PHONY : main_function.obj
-
-# target to build an object file
-main_function.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/main_function.c.obj
-.PHONY : main_function.c.obj
-
-main_function.i: main_function.c.i
-.PHONY : main_function.i
-
-# target to preprocess a source file
-main_function.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/main_function.c.i
-.PHONY : main_function.c.i
-
-main_function.s: main_function.c.s
-.PHONY : main_function.s
-
-# target to generate assembly for a file
-main_function.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/main_function.c.s
-.PHONY : main_function.c.s
-
 porcentaje_vocales.obj: porcentaje_vocales.c.obj
 .PHONY : porcentaje_vocales.obj
 
@@ -224,54 +152,6 @@ porcentaje_vocales.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/porcentaje_vocales.c.s
 .PHONY : porcentaje_vocales.c.s
 
-promedio_valores.obj: promedio_valores.c.obj
-.PHONY : promedio_valores.obj
-
-# target to build an object file
-promedio_valores.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio_valores.c.obj
-.PHONY : promedio_valores.c.obj
-
-promedio_valores.i: promedio_valores.c.i
-.PHONY : promedio_valores.i
-
-# target to preprocess a source file
-promedio_valores.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio_valores.c.i
-.PHONY : promedio_valores.c.i
-
-promedio_valores.s: promedio_valores.c.s
-.PHONY : promedio_valores.s
-
-# target to generate assembly for a file
-promedio_valores.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio_valores.c.s
-.PHONY : promedio_valores.c.s
-
-selector_muestra.obj: selector_muestra.c.obj
-.PHONY : selector_muestra.obj
-
-# target to build an object file
-selector_muestra.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/selector_muestra.c.obj
-.PHONY : selector_muestra.c.obj
-
-selector_muestra.i: selector_muestra.c.i
-.PHONY : selector_muestra.i
-
-# target to preprocess a source file
-selector_muestra.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/selector_muestra.c.i
-.PHONY : selector_muestra.c.i
-
-selector_muestra.s: selector_muestra.c.s
-.PHONY : selector_muestra.s
-
-# target to generate assembly for a file
-selector_muestra.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/selector_muestra.c.s
-.PHONY : selector_muestra.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -281,24 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
-	@echo ... func_mayor_menor.obj
-	@echo ... func_mayor_menor.i
-	@echo ... func_mayor_menor.s
-	@echo ... listaCircular.obj
-	@echo ... listaCircular.i
-	@echo ... listaCircular.s
-	@echo ... main_function.obj
-	@echo ... main_function.i
-	@echo ... main_function.s
 	@echo ... porcentaje_vocales.obj
 	@echo ... porcentaje_vocales.i
 	@echo ... porcentaje_vocales.s
-	@echo ... promedio_valores.obj
-	@echo ... promedio_valores.i
-	@echo ... promedio_valores.s
-	@echo ... selector_muestra.obj
-	@echo ... selector_muestra.i
-	@echo ... selector_muestra.s
 .PHONY : help
 
 
