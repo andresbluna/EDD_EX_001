@@ -25,6 +25,7 @@ def escribir_archivo(nombre_archivo, datos):
         with open(nombre_archivo, 'w', encoding='utf-8') as archivo:
             for linea in datos:
                 archivo.write(','.join(linea) + '\n')
+        print(f"Archivo '{nombre_archivo}' procesado correctamente.")
     except Exception as e:
         print(f"Error al escribir el archivo: {e}")
 
