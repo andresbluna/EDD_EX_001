@@ -36,3 +36,4 @@ if __name__ == "__main__":
         indices_a_seleccionar = [3, 4, 5, 6, 7]
         datos_seleccionados = separar(datos_archivo, indices_a_seleccionar)
         escribir_archivo('./cmake-build-debug/datafutbol_process.csv', datos_seleccionados)
+#hola cecilio
