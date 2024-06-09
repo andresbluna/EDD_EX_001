@@ -22,7 +22,7 @@ ssh-keygen -t rsa -b 4096 -C "su-email@example.com"
    - Ejecuten el siguiente comando en PowerShell:
 
 
-sh Start-Service ssh-agent
+Start-Service ssh-agent
 
 
 2. **Añadir la clave SSH al ssh-agent**:
