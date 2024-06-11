@@ -146,14 +146,12 @@ void imprimir_muestra(Jugador* principal, int indice) {
     }
 
     int tamano = tamano_lista(principal);
-    if (indice >= tamano) {
-        printf("Índice fuera de rango.\n");
-        return;
+    if (indice < 0) {
+        indice = tamano + indice; // Convertir índice negativo a positivo
     }
 
-    if (indice < 0) {
-        indice = tamano + indice;
-    }
+    // Calcular el índice efectivo dentro del rango de la lista circular
+    indice %= tamano;
 
     Jugador* actual = principal;
     for (int i = 0; i < indice; i++) {
