@@ -1,4 +1,4 @@
-////jugador* juegos_jugados
+//jugador* juegos_jugados
 // Función para intercambiar dos nodos (jugadores)
 void intercambiar_nodos(Jugador* a, Jugador* b) {
     Jugador temp = *a;
