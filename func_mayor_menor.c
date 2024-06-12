@@ -7,7 +7,7 @@ void intercambiar_nodos(Jugador* a, Jugador* b) {
 }
 
 // Función para ordenar la lista de jugadores de menor a mayor según los juegos jugados
-void ordenar_por_juegos_jugados(Jugador* inicio) {
+void ordenar_por_cualquier_dato_del_nodo(Jugador* inicio) {
     if (inicio == NULL) {
         return; // Lista vacía
     }
