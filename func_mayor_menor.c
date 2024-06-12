@@ -1,41 +1,30 @@
-//jugador* juegos_jugados
-// Función para intercambiar dos nodos (jugadores)
-void intercambiar_nodos(Jugador* a, Jugador* b) {
-    Jugador temp = *a;
-    *a = *b;
-    *b = temp;
-}
+// Función para particionar la lista para QuickSort
+Jugador* particion(Jugador* inicio, Jugador* fin) {
+    int pivot = fin->juegos_jugados;
+    Jugador* i = inicio->ant;
 
-// Función para ordenar la lista de jugadores de menor a mayor según los juegos jugados
-void ordenar_por_cualquier_dato_del_nodo(Jugador* inicio) {
-    if (inicio == NULL) {
-        return; // Lista vacía
+    for (Jugador* j = inicio; j != fin; j = j->sig) {
+        if (j->juegos_jugados <= pivot) {
+            i = (i == NULL) ? inicio : i->sig;
+            // Intercambiar los nodos i y j
+            // (nombre, juegos_jugados, sustitucion, min, goles)
+            // ...
+        }
     }
 
-    int intercambiado;
-    Jugador* actual;
-    Jugador* ultimo = NULL;
+    i = (i == NULL) ? inicio : i->sig;
+    // Intercambiar los nodos i y fin
+    // (nombre, juegos_jugados, sustitucion, min, goles)
+    // ...
 
-    do {
-        intercambiado = 0;
-        actual = inicio;
-
-        while (actual->sig != ultimo) {
-            if (actual->juegos_jugados > actual->sig->juegos_jugados) {
-                intercambiar_nodos(actual, actual->sig);
-                intercambiado = 1;
-            }
-            actual = actual->sig;
-        }
-        ultimo = actual;
-    } while (intercambiado);
+    return i;
 }
 
-// Llama a esta función pasando el puntero al primer jugador de la lista
-// antes de imprimir la lista o liberar la memoria.
-
-// Ejemplo de uso:
-// Jugador* principal = leer_datafutbol_process("datafutbol_process.csv");
-// ordenar_por_juegos_jugados(principal);
-// imprimir_lista(principal);
-// liberar_memoria_lista(principal);
+// Función QuickSort recursiva
+void quicksort(Jugador* inicio, Jugador* fin) {
+    if (fin != NULL && inicio != fin && inicio != fin->sig) {
+        Jugador* pivot = particion(inicio, fin);
+        quicksort(inicio, pivot->ant);
+        quicksort(pivot->sig, fin);
+    }
+}
