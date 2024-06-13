@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Desarrollo/EDD_EX_001/menor_a_mayor.c" "CMakeFiles/untitled1.dir/menor_a_mayor.c.obj" "gcc" "CMakeFiles/untitled1.dir/menor_a_mayor.c.obj.d"
   "C:/Desarrollo/EDD_EX_001/porcentaje_vocales.c" "CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj" "gcc" "CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj.d"
+  "C:/Desarrollo/EDD_EX_001/promedio.c" "CMakeFiles/untitled1.dir/promedio.c.obj" "gcc" "CMakeFiles/untitled1.dir/promedio.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

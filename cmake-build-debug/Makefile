@@ -128,6 +128,30 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
+menor_a_mayor.obj: menor_a_mayor.c.obj
+.PHONY : menor_a_mayor.obj
+
+# target to build an object file
+menor_a_mayor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/menor_a_mayor.c.obj
+.PHONY : menor_a_mayor.c.obj
+
+menor_a_mayor.i: menor_a_mayor.c.i
+.PHONY : menor_a_mayor.i
+
+# target to preprocess a source file
+menor_a_mayor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/menor_a_mayor.c.i
+.PHONY : menor_a_mayor.c.i
+
+menor_a_mayor.s: menor_a_mayor.c.s
+.PHONY : menor_a_mayor.s
+
+# target to generate assembly for a file
+menor_a_mayor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/menor_a_mayor.c.s
+.PHONY : menor_a_mayor.c.s
+
 porcentaje_vocales.obj: porcentaje_vocales.c.obj
 .PHONY : porcentaje_vocales.obj
 
@@ -152,6 +176,30 @@ porcentaje_vocales.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/porcentaje_vocales.c.s
 .PHONY : porcentaje_vocales.c.s
 
+promedio.obj: promedio.c.obj
+.PHONY : promedio.obj
+
+# target to build an object file
+promedio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio.c.obj
+.PHONY : promedio.c.obj
+
+promedio.i: promedio.c.i
+.PHONY : promedio.i
+
+# target to preprocess a source file
+promedio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio.c.i
+.PHONY : promedio.c.i
+
+promedio.s: promedio.c.s
+.PHONY : promedio.s
+
+# target to generate assembly for a file
+promedio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio.c.s
+.PHONY : promedio.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
+	@echo ... menor_a_mayor.obj
+	@echo ... menor_a_mayor.i
+	@echo ... menor_a_mayor.s
 	@echo ... porcentaje_vocales.obj
 	@echo ... porcentaje_vocales.i
 	@echo ... porcentaje_vocales.s
+	@echo ... promedio.obj
+	@echo ... promedio.i
+	@echo ... promedio.s
 .PHONY : help
 
 

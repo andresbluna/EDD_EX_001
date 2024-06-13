@@ -84,7 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Desarrollo/EDD_EX_001/menor_a_mayor.c">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="C:/Desarrollo/EDD_EX_001/porcentaje_vocales.c">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Desarrollo/EDD_EX_001/promedio.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="C:/Desarrollo/EDD_EX_001/CMakeLists.txt">
