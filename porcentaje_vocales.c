@@ -126,6 +126,28 @@ double calcular_porcentaje_vocales(Jugador* principal) {
     return porcentaje;
 }
 
+double calcular_promedio(Jugador* principal, int (*obtener_valor)(Jugador*)) {
+    if (principal == NULL) {
+        return 0.0;
+    }
+
+    int total = 0;
+    int count = 0;
+    Jugador* actual = principal;
+
+    do {
+        total += obtener_valor(actual);
+        count++;
+        actual = actual->sig;
+    } while (actual!= principal);
+
+    return (count > 0)? (total / (double)count) : 0.0;
+}
+
+int obtener_goles(Jugador* jugador) {
+    return jugador->goles;
+}
+
 int tamano_lista(Jugador* principal) {
     if (principal == NULL) {
         return 0;
@@ -173,8 +195,11 @@ int main() {
     double porcentaje_vocales = calcular_porcentaje_vocales(principal);
     printf("\nPorcentaje de vocales en los nombres de los jugadores: %.2f%%\n", porcentaje_vocales);
 
+    double promedio_goles = calcular_promedio(principal, obtener_goles);
+    printf("\nPromedio de goles: %.2f\n", promedio_goles);
+
     int indice;
-    printf("Ingrese el indice del jugador que desea ver (puede ser negativo):" );
+    printf("Ingrese el indice del jugador que desea ver (puede ser negativo): ");
     scanf("%d", &indice);
     imprimir_muestra(principal, indice);
 
