@@ -224,38 +224,39 @@ void ordenar_lista(Jugador* principal, int parametro) {
         while (siguiente!= principal) {
             switch (parametro) {
                 case 1:
-                    if (actual->juegos_jugados < siguiente->juegos_jugados) {
+                    if (actual->juegos_jugados > siguiente->juegos_jugados) { // Cambiado de '<' a '>'
                         intercambiar_datos(actual, siguiente);
                         ordenado = 0;
                     }
-                    break;
+                break;
                 case 2:
-                    if (actual->sustitucion < siguiente->sustitucion) {
+                    if (actual->sustitucion > siguiente->sustitucion) { // Cambiado de '<' a '>'
                         intercambiar_datos(actual, siguiente);
                         ordenado = 0;
                     }
-                    break;
+                break;
                 case 3:
-                    if (actual->min < siguiente->min) {
+                    if (actual->min > siguiente->min) { // Cambiado de '<' a '>'
                         intercambiar_datos(actual, siguiente);
                         ordenado = 0;
                     }
-                    break;
+                break;
                 case 4:
-                    if (actual->goles < siguiente->goles) {
+                    if (actual->goles > siguiente->goles) { // Cambiado de '<' a '>'
                         intercambiar_datos(actual, siguiente);
                         ordenado = 0;
                     }
-                    break;
+                break;
                 default:
                     printf("Parámetro inválido para ordenar.\n");
-                    return;
+                return;
             }
             actual = siguiente;
             siguiente = siguiente->sig;
         }
     }
 }
+
 
 int main() {
     const char* nombredataprocess = "datafutbol_process.csv";
