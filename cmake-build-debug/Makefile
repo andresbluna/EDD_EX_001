@@ -128,77 +128,29 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-menor_a_mayor.obj: menor_a_mayor.c.obj
-.PHONY : menor_a_mayor.obj
+listaCircular.obj: listaCircular.c.obj
+.PHONY : listaCircular.obj
 
 # target to build an object file
-menor_a_mayor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/menor_a_mayor.c.obj
-.PHONY : menor_a_mayor.c.obj
+listaCircular.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.obj
+.PHONY : listaCircular.c.obj
 
-menor_a_mayor.i: menor_a_mayor.c.i
-.PHONY : menor_a_mayor.i
-
-# target to preprocess a source file
-menor_a_mayor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/menor_a_mayor.c.i
-.PHONY : menor_a_mayor.c.i
-
-menor_a_mayor.s: menor_a_mayor.c.s
-.PHONY : menor_a_mayor.s
-
-# target to generate assembly for a file
-menor_a_mayor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/menor_a_mayor.c.s
-.PHONY : menor_a_mayor.c.s
-
-porcentaje_vocales.obj: porcentaje_vocales.c.obj
-.PHONY : porcentaje_vocales.obj
-
-# target to build an object file
-porcentaje_vocales.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj
-.PHONY : porcentaje_vocales.c.obj
-
-porcentaje_vocales.i: porcentaje_vocales.c.i
-.PHONY : porcentaje_vocales.i
+listaCircular.i: listaCircular.c.i
+.PHONY : listaCircular.i
 
 # target to preprocess a source file
-porcentaje_vocales.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/porcentaje_vocales.c.i
-.PHONY : porcentaje_vocales.c.i
+listaCircular.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.i
+.PHONY : listaCircular.c.i
 
-porcentaje_vocales.s: porcentaje_vocales.c.s
-.PHONY : porcentaje_vocales.s
-
-# target to generate assembly for a file
-porcentaje_vocales.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/porcentaje_vocales.c.s
-.PHONY : porcentaje_vocales.c.s
-
-promedio.obj: promedio.c.obj
-.PHONY : promedio.obj
-
-# target to build an object file
-promedio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio.c.obj
-.PHONY : promedio.c.obj
-
-promedio.i: promedio.c.i
-.PHONY : promedio.i
-
-# target to preprocess a source file
-promedio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio.c.i
-.PHONY : promedio.c.i
-
-promedio.s: promedio.c.s
-.PHONY : promedio.s
+listaCircular.s: listaCircular.c.s
+.PHONY : listaCircular.s
 
 # target to generate assembly for a file
-promedio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio.c.s
-.PHONY : promedio.c.s
+listaCircular.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.s
+.PHONY : listaCircular.c.s
 
 # Help Target
 help:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
-	@echo ... menor_a_mayor.obj
-	@echo ... menor_a_mayor.i
-	@echo ... menor_a_mayor.s
-	@echo ... porcentaje_vocales.obj
-	@echo ... porcentaje_vocales.i
-	@echo ... porcentaje_vocales.s
-	@echo ... promedio.obj
-	@echo ... promedio.i
-	@echo ... promedio.s
+	@echo ... listaCircular.obj
+	@echo ... listaCircular.i
+	@echo ... listaCircular.s
 .PHONY : help
 
 

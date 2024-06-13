@@ -3,6 +3,4 @@ project(untitled1)
 
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-add_executable(untitled1 porcentaje_vocales.c
-        menor_a_mayor.c
-        promedio.c)
+add_executable(untitled1 listaCircular.c)

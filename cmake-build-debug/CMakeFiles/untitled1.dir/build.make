@@ -68,65 +68,33 @@ include CMakeFiles/untitled1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/untitled1.dir/flags.make
 
-CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj: C:/Desarrollo/EDD_EX_001/porcentaje_vocales.c
-CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj: CMakeFiles/untitled1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Desarrollo\EDD_EX_001\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj -MF CMakeFiles\untitled1.dir\porcentaje_vocales.c.obj.d -o CMakeFiles\untitled1.dir\porcentaje_vocales.c.obj -c C:\Desarrollo\EDD_EX_001\porcentaje_vocales.c
+CMakeFiles/untitled1.dir/listaCircular.c.obj: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/listaCircular.c.obj: C:/Desarrollo/EDD_EX_001/listaCircular.c
+CMakeFiles/untitled1.dir/listaCircular.c.obj: CMakeFiles/untitled1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Desarrollo\EDD_EX_001\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/listaCircular.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/untitled1.dir/listaCircular.c.obj -MF CMakeFiles\untitled1.dir\listaCircular.c.obj.d -o CMakeFiles\untitled1.dir\listaCircular.c.obj -c C:\Desarrollo\EDD_EX_001\listaCircular.c
 
-CMakeFiles/untitled1.dir/porcentaje_vocales.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/untitled1.dir/porcentaje_vocales.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Desarrollo\EDD_EX_001\porcentaje_vocales.c > CMakeFiles\untitled1.dir\porcentaje_vocales.c.i
+CMakeFiles/untitled1.dir/listaCircular.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/untitled1.dir/listaCircular.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Desarrollo\EDD_EX_001\listaCircular.c > CMakeFiles\untitled1.dir\listaCircular.c.i
 
-CMakeFiles/untitled1.dir/porcentaje_vocales.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled1.dir/porcentaje_vocales.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Desarrollo\EDD_EX_001\porcentaje_vocales.c -o CMakeFiles\untitled1.dir\porcentaje_vocales.c.s
-
-CMakeFiles/untitled1.dir/menor_a_mayor.c.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/menor_a_mayor.c.obj: C:/Desarrollo/EDD_EX_001/menor_a_mayor.c
-CMakeFiles/untitled1.dir/menor_a_mayor.c.obj: CMakeFiles/untitled1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Desarrollo\EDD_EX_001\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/menor_a_mayor.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/untitled1.dir/menor_a_mayor.c.obj -MF CMakeFiles\untitled1.dir\menor_a_mayor.c.obj.d -o CMakeFiles\untitled1.dir\menor_a_mayor.c.obj -c C:\Desarrollo\EDD_EX_001\menor_a_mayor.c
-
-CMakeFiles/untitled1.dir/menor_a_mayor.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/untitled1.dir/menor_a_mayor.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Desarrollo\EDD_EX_001\menor_a_mayor.c > CMakeFiles\untitled1.dir\menor_a_mayor.c.i
-
-CMakeFiles/untitled1.dir/menor_a_mayor.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled1.dir/menor_a_mayor.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Desarrollo\EDD_EX_001\menor_a_mayor.c -o CMakeFiles\untitled1.dir\menor_a_mayor.c.s
-
-CMakeFiles/untitled1.dir/promedio.c.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/promedio.c.obj: C:/Desarrollo/EDD_EX_001/promedio.c
-CMakeFiles/untitled1.dir/promedio.c.obj: CMakeFiles/untitled1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Desarrollo\EDD_EX_001\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled1.dir/promedio.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/untitled1.dir/promedio.c.obj -MF CMakeFiles\untitled1.dir\promedio.c.obj.d -o CMakeFiles\untitled1.dir\promedio.c.obj -c C:\Desarrollo\EDD_EX_001\promedio.c
-
-CMakeFiles/untitled1.dir/promedio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/untitled1.dir/promedio.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Desarrollo\EDD_EX_001\promedio.c > CMakeFiles\untitled1.dir\promedio.c.i
-
-CMakeFiles/untitled1.dir/promedio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled1.dir/promedio.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Desarrollo\EDD_EX_001\promedio.c -o CMakeFiles\untitled1.dir\promedio.c.s
+CMakeFiles/untitled1.dir/listaCircular.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/untitled1.dir/listaCircular.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Desarrollo\EDD_EX_001\listaCircular.c -o CMakeFiles\untitled1.dir\listaCircular.c.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
-"CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj" \
-"CMakeFiles/untitled1.dir/menor_a_mayor.c.obj" \
-"CMakeFiles/untitled1.dir/promedio.c.obj"
+"CMakeFiles/untitled1.dir/listaCircular.c.obj"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
-untitled1.exe: CMakeFiles/untitled1.dir/porcentaje_vocales.c.obj
-untitled1.exe: CMakeFiles/untitled1.dir/menor_a_mayor.c.obj
-untitled1.exe: CMakeFiles/untitled1.dir/promedio.c.obj
+untitled1.exe: CMakeFiles/untitled1.dir/listaCircular.c.obj
 untitled1.exe: CMakeFiles/untitled1.dir/build.make
 untitled1.exe: CMakeFiles/untitled1.dir/linkLibs.rsp
 untitled1.exe: CMakeFiles/untitled1.dir/objects1.rsp
 untitled1.exe: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Desarrollo\EDD_EX_001\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable untitled1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Desarrollo\EDD_EX_001\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable untitled1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
