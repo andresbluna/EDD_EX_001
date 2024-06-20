@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Desarrollo/EDD_EX_001/listaCircular.c" "CMakeFiles/untitled1.dir/listaCircular.c.obj" "gcc" "CMakeFiles/untitled1.dir/listaCircular.c.obj.d"
+  "C:/Desarrollo/EDD_EX_001/Poker.c" "CMakeFiles/untitled1.dir/Poker.c.obj" "gcc" "CMakeFiles/untitled1.dir/Poker.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
