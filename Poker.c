@@ -7,44 +7,58 @@
 #define CARTAS_POR_JUGADOR 3
 #define RONDAS_PARA_GANAR 3
 
-typedef struct {
+typedef struct Cartas{
     char pinta[4];
     char valor[4];
 } Carta;
 
-typedef struct {
+typedef struct Manuela{
     Carta cartas[CARTAS_POR_JUGADOR];
     int puntaje;
 } Mano;
 
-void inicializarMazo(Carta mazo[NUM_CARTAS]) {
+typedef struct {
+    Carta cartas[NUM_CARTAS];
+    int tope;
+} PilaDeCartas;
+
+void inicializarMazo(PilaDeCartas *mazo) {
     char *pintas[] = {"GEN", "IFM", "PRO"};
     char *valores[] = {"CER", "DOS", "CUA", "SEI", "OCH", "DIE", "PHI", "CAR", "FEL", "HUG"};
 
     int indice = 0;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 10; j++) {
-            strcpy(mazo[indice].pinta, pintas[i]);
-            strcpy(mazo[indice].valor, valores[j]);
+            strcpy(mazo->cartas[indice].pinta, pintas[i]);
+            strcpy(mazo->cartas[indice].valor, valores[j]);
             indice++;
         }
     }
+    mazo->tope = NUM_CARTAS;
 }
 
-void barajar(Carta mazo[NUM_CARTAS]) {
+void barajar(PilaDeCartas *mazo) {
     srand(time(NULL));
     for (int i = 0; i < NUM_CARTAS; i++) {
         int j = rand() % NUM_CARTAS;
-        Carta temp = mazo[i];
-        mazo[i] = mazo[j];
-        mazo[j] = temp;
+        Carta temp = mazo->cartas[i];
+        mazo->cartas[i] = mazo->cartas[j];
+        mazo->cartas[j] = temp;
     }
 }
 
-void robarCartas(Carta mazo[NUM_CARTAS], int *indiceMazo, Mano *mano) {
+Carta pop(PilaDeCartas *mazo) {
+    if (mazo->tope > 0) {
+        return mazo->cartas[--(mazo->tope)];
+    } else {
+        Carta cartaVacia = {"", ""};
+        return cartaVacia;
+    }
+}
+
+void robarCartas(PilaDeCartas *mazo, Mano *mano) {
     for (int i = 0; i < CARTAS_POR_JUGADOR; i++) {
-        mano->cartas[i] = mazo[*indiceMazo];
-        (*indiceMazo)++;
+        mano->cartas[i] = pop(mazo);
     }
 }
 
@@ -129,10 +143,10 @@ int calcularPuntaje(Mano *mano) {
     }
 }
 
-void jugarRonda(Carta mazo[NUM_CARTAS], int *indiceMazo, int *ganador1, int *ganador2) {
+void jugarRonda(PilaDeCartas *mazo, int *ganador1, int *ganador2) {
     Mano mano1, mano2;
-    robarCartas(mazo, indiceMazo, &mano1);
-    robarCartas(mazo, indiceMazo, &mano2);
+    robarCartas(mazo, &mano1);
+    robarCartas(mazo, &mano2);
 
     mano1.puntaje = calcularPuntaje(&mano1);
     mano2.puntaje = calcularPuntaje(&mano2);
@@ -162,28 +176,27 @@ void jugarRonda(Carta mazo[NUM_CARTAS], int *indiceMazo, int *ganador1, int *gan
 }
 
 int main() {
-    Carta mazo[NUM_CARTAS];
-    inicializarMazo(mazo);
-    barajar(mazo);
+    PilaDeCartas mazo;
+    inicializarMazo(&mazo);
+    barajar(&mazo);
 
-    int indiceMazo = 0;
     int ganador1 = 0, ganador2 = 0;
 
     while (ganador1 < RONDAS_PARA_GANAR && ganador2 < RONDAS_PARA_GANAR) {
-        jugarRonda(mazo, &indiceMazo, &ganador1, &ganador2);
+        jugarRonda(&mazo, &ganador1, &ganador2);
         printf("Puntajes: Jugador 1 = %d, Jugador 2 = %d\n", ganador1, ganador2);
 
         // Volver a barajar si el índice del mazo alcanza el límite
-        if (indiceMazo >= NUM_CARTAS - CARTAS_POR_JUGADOR * 2) {
-            barajar(mazo);
-            indiceMazo = 0; // Reiniciar el índice del mazo
+        if (mazo.tope < CARTAS_POR_JUGADOR * 2) {
+            barajar(&mazo);
+            mazo.tope = NUM_CARTAS;
         }
     }
 
     if (ganador1 == RONDAS_PARA_GANAR) {
-        printf("¡Jugador 1 gana el juego!\n");
+        printf("Jugador 1 gana el juego!!\n");
     } else {
-        printf("¡Jugador 2 gana el juego!\n");
+        printf("Jugador 2 gana el juego!!\n");
     }
 
     return 0;
