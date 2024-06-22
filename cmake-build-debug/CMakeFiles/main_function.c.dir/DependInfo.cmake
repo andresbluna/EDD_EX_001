@@ -8,8 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/Listacircular2.c" "CMakeFiles/untitled1.dir/Listacircular2.c.o" "gcc" "CMakeFiles/untitled1.dir/Listacircular2.c.o.d"
-  "/Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/main_function.c" "CMakeFiles/untitled1.dir/main_function.c.o" "gcc" "CMakeFiles/untitled1.dir/main_function.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

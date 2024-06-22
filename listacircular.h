@@ -60,34 +60,7 @@ void leerArchivoYCrearLista(const char* filename, jugador **jugador_lista) {
     fclose(file);
 }
 
-int contar_vocales(const char* str) {
-    int contador = 0;
-    for (int i = 0; str[i]; i++) {
-        char c = tolower(str[i]);
-        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-            contador++;
-        }
-    }
-    return contador;
-}
 
-double calcular_porcentaje_vocales(jugador* principal) {
-    if (principal == NULL) {
-        return 0.0;
-    }
-
-    int total_caracteres = 0;
-    int total_vocales = 0;
-    jugador* actual = principal;
-
-    do {
-        total_caracteres += strlen(actual->nombre);
-        total_vocales += contar_vocales(actual->nombre);
-        actual = actual->siguiente;
-    } while (actual != principal);
-
-    return (total_vocales * 100.0) / total_caracteres;
-}
 
 double calcular_promedio(jugador* principal, int (*obtener_valor)(jugador*)) {
     if (principal == NULL) {
@@ -204,39 +177,4 @@ void ordenar_lista(jugador** jugador_lista, int parametro) {
             actual = actual->siguiente;
         } while (actual->siguiente != *jugador_lista);
     } while (intercambiado);
-}
-
-int main() {
-    jugador *jugador_lista = NULL;
-    crearjugador_lista(&jugador_lista);
-    leerArchivoYCrearLista("datafutbol_process.csv", &jugador_lista);
-
-    double porcentaje_vocales = calcular_porcentaje_vocales(jugador_lista);
-    printf(" Porcentaje de vocales en los nombres de los jugadores: %.2f%%\n", porcentaje_vocales);
-
-    double promedio_goles = calcular_promedio(jugador_lista, obtener_goles);
-    printf(" Promedio de goles: %.2f\n", promedio_goles);
-
-    int indice;
-    printf(" Ingrese el indice del jugador que desea ver (puede ser negativo): ");
-    scanf("%d", &indice);
-    imprimir_muestra(jugador_lista, indice);
-
-    int parametro;
-    printf(" Ingrese el numero del parametro por el cual desea ordenar (1: Partidos Jugados, 2: Sustituciones, 3: Minutos, 4: Goles): ");
-    scanf("%d", &parametro);
-    ordenar_lista(&jugador_lista, parametro);
-    printf("Lista ordenada.\n");
-
-    // Mostrar la lista ordenada para verificar
-    jugador* actual = jugador_lista;
-    do {
-        printf(" Nombre: %s, Partidos Jugados: %d, Sustituciones: %d, Minutos: %d, Goles: %d\n",
-               actual->nombre, actual->partidos_jugados, actual->sustituciones, actual->minutos, actual->goles);
-        actual = actual->siguiente;
-    } while (actual != jugador_lista);
-
-    // Liberar memoria y cerrar recursos aquí si es necesario
-
-    return 0;
 }
