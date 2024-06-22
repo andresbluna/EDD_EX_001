@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Desarrollo/EDD_EX_001/Poker.c">
+		<Unit filename="C:/Desarrollo/EDD_EX_001/Listacircular2.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="C:/Desarrollo/EDD_EX_001/CMakeLists.txt">

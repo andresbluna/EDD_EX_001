@@ -128,29 +128,29 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-Poker.obj: Poker.c.obj
-.PHONY : Poker.obj
+Listacircular2.obj: Listacircular2.c.obj
+.PHONY : Listacircular2.obj
 
 # target to build an object file
-Poker.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Poker.c.obj
-.PHONY : Poker.c.obj
+Listacircular2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Listacircular2.c.obj
+.PHONY : Listacircular2.c.obj
 
-Poker.i: Poker.c.i
-.PHONY : Poker.i
+Listacircular2.i: Listacircular2.c.i
+.PHONY : Listacircular2.i
 
 # target to preprocess a source file
-Poker.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Poker.c.i
-.PHONY : Poker.c.i
+Listacircular2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Listacircular2.c.i
+.PHONY : Listacircular2.c.i
 
-Poker.s: Poker.c.s
-.PHONY : Poker.s
+Listacircular2.s: Listacircular2.c.s
+.PHONY : Listacircular2.s
 
 # target to generate assembly for a file
-Poker.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Poker.c.s
-.PHONY : Poker.c.s
+Listacircular2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/Listacircular2.c.s
+.PHONY : Listacircular2.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
-	@echo ... Poker.obj
-	@echo ... Poker.i
-	@echo ... Poker.s
+	@echo ... Listacircular2.obj
+	@echo ... Listacircular2.i
+	@echo ... Listacircular2.s
 .PHONY : help
 
 

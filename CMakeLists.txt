@@ -3,4 +3,4 @@ project(untitled1)
 
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-add_executable(untitled1 Poker.c)
+add_executable(untitled1 Listacircular2.c)
