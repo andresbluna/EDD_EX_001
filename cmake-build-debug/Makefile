@@ -128,77 +128,29 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-func_mayor_menor.obj: func_mayor_menor.c.obj
-.PHONY : func_mayor_menor.obj
+procesos.obj: procesos.c.obj
+.PHONY : procesos.obj
 
 # target to build an object file
-func_mayor_menor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/func_mayor_menor.c.obj
-.PHONY : func_mayor_menor.c.obj
+procesos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/procesos.c.obj
+.PHONY : procesos.c.obj
 
-func_mayor_menor.i: func_mayor_menor.c.i
-.PHONY : func_mayor_menor.i
-
-# target to preprocess a source file
-func_mayor_menor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/func_mayor_menor.c.i
-.PHONY : func_mayor_menor.c.i
-
-func_mayor_menor.s: func_mayor_menor.c.s
-.PHONY : func_mayor_menor.s
-
-# target to generate assembly for a file
-func_mayor_menor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/func_mayor_menor.c.s
-.PHONY : func_mayor_menor.c.s
-
-listaCircular.obj: listaCircular.c.obj
-.PHONY : listaCircular.obj
-
-# target to build an object file
-listaCircular.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.obj
-.PHONY : listaCircular.c.obj
-
-listaCircular.i: listaCircular.c.i
-.PHONY : listaCircular.i
+procesos.i: procesos.c.i
+.PHONY : procesos.i
 
 # target to preprocess a source file
-listaCircular.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.i
-.PHONY : listaCircular.c.i
+procesos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/procesos.c.i
+.PHONY : procesos.c.i
 
-listaCircular.s: listaCircular.c.s
-.PHONY : listaCircular.s
-
-# target to generate assembly for a file
-listaCircular.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/listaCircular.c.s
-.PHONY : listaCircular.c.s
-
-promedio_valores.obj: promedio_valores.c.obj
-.PHONY : promedio_valores.obj
-
-# target to build an object file
-promedio_valores.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio_valores.c.obj
-.PHONY : promedio_valores.c.obj
-
-promedio_valores.i: promedio_valores.c.i
-.PHONY : promedio_valores.i
-
-# target to preprocess a source file
-promedio_valores.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio_valores.c.i
-.PHONY : promedio_valores.c.i
-
-promedio_valores.s: promedio_valores.c.s
-.PHONY : promedio_valores.s
+procesos.s: procesos.c.s
+.PHONY : procesos.s
 
 # target to generate assembly for a file
-promedio_valores.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/promedio_valores.c.s
-.PHONY : promedio_valores.c.s
+procesos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/procesos.c.s
+.PHONY : procesos.c.s
 
 # Help Target
 help:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
-	@echo ... func_mayor_menor.obj
-	@echo ... func_mayor_menor.i
-	@echo ... func_mayor_menor.s
-	@echo ... listaCircular.obj
-	@echo ... listaCircular.i
-	@echo ... listaCircular.s
-	@echo ... promedio_valores.obj
-	@echo ... promedio_valores.i
-	@echo ... promedio_valores.s
+	@echo ... procesos.obj
+	@echo ... procesos.i
+	@echo ... procesos.s
 .PHONY : help
 
 

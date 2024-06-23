@@ -78,13 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Desarrollo/EDD_EX_001/func_mayor_menor.c">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="C:/Desarrollo/EDD_EX_001/listaCircular.c">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="C:/Desarrollo/EDD_EX_001/promedio_valores.c">
+		<Unit filename="C:/Desarrollo/EDD_EX_001/procesos.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="C:/Desarrollo/EDD_EX_001/CMakeLists.txt">

@@ -3,7 +3,6 @@ project(untitled1 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(untitled1 listaCircular.c
-        func_mayor_menor.c
-        promedio_valores.c
+add_executable(untitled1
+        procesos.c
 )
