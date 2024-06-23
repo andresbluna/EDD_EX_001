@@ -1,7 +1,6 @@
 #ifndef LISTA_MENOR_MAYOR_H
 #define LISTA_MENOR_MAYOR_H
 
-
 #include "listacircular.h"
 
 int obtener_valor(jugador* jugador, int parametro) {

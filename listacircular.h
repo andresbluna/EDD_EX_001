@@ -1,7 +1,6 @@
 #ifndef LISTACIRCULAR_H
 #define LISTACIRCULAR_H
 
-
 #include <stdio.h>
 #include <stdlib.h>
 
