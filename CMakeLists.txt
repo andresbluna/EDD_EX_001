@@ -1,11 +1,18 @@
-cmake_minimum_required(VERSION 3.28)
-project(untitled1 C)
+cmake_minimum_required(VERSION 3.10)
+project(untitled1)
 
-set(CMAKE_C_STANDARD 11)
 
-add_executable(untitled1 listaCircular.c
-        func_mayor_menor.c
-        promedio_valores.c
-        porcentaje_vocales.c
-        selector_muestra.c
-        main_function.c)
+include_directories(${CMAKE_SOURCE_DIR}/lista_funciones)
+include_directories(${CMAKE_SOURCE_DIR}/poker_funciones)
+include_directories(${CMAKE_SOURCE_DIR}/cola_funciones)
+include_directories(${CMAKE_SOURCE_DIR}/procesos_funciones)
+
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+add_executable(untitled1 main.c)
+
+file(GLOB_RECURSE lista_funciones_sources RELATIVE ${CMAKE_SOURCE_DIR} "${CMAKE_SOURCE_DIR}/lista_funciones/*.c")
+
+add_library(lista_funciones ${lista_funciones_sources})
+
+target_link_libraries(untitled1 lista_funciones poker_funciones cola_funciones procesos_funciones)
