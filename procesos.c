@@ -1,93 +1,83 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_PROCESOS 10
-#define PRIORIDAD_MAXIMA 5
+#define MAX_TAMANO_COLA 10
 
 typedef struct {
     int id;
     int prioridad;
 } Proceso;
 
-typedef struct Nodo {
-    Proceso proceso;
-    struct Nodo* siguiente;
-} Nodo;
-
 typedef struct {
-    Nodo* frente;
-    Nodo* fin;
+    Proceso procesos[MAX_TAMANO_COLA];
+    int tamano;
 } ColaPrioridad;
 
-void inicializar(ColaPrioridad* cola) {
-    cola->frente = NULL;
-    cola->fin = NULL;
-}
-
-void agregarProceso(ColaPrioridad* cola, Proceso proceso) {
-    Nodo* nuevoNodo = malloc(sizeof(Nodo));
-    if (nuevoNodo == NULL) {
-        fprintf(stderr, "Error al asignar memoria para un nuevo nodo.\n");
+void encolar(ColaPrioridad *cola, Proceso proceso) {
+    if (cola->tamano >= MAX_TAMANO_COLA) {
+        printf("Cola llena, no se puede encolar el proceso id: %d\n", proceso.id);
         return;
     }
-    nuevoNodo->proceso = proceso;
-    nuevoNodo->siguiente = NULL;
 
-    if (cola->frente == NULL || proceso.prioridad < cola->frente->proceso.prioridad) {
-        nuevoNodo->siguiente = cola->frente;
-        cola->frente = nuevoNodo;
-    } else {
-        Nodo* actual = cola->frente;
-        while (actual->siguiente!= NULL && actual->siguiente->proceso.prioridad <= proceso.prioridad) {
-            actual = actual->siguiente;
-        }
-        nuevoNodo->siguiente = actual->siguiente;
-        actual->siguiente = nuevoNodo;
-        if (nuevoNodo->siguiente == NULL) {
-            cola->fin = nuevoNodo;
-        }
+    int i = cola->tamano - 1;
+    while (i >= 0 && cola->procesos[i].prioridad > proceso.prioridad) {
+        cola->procesos[i + 1] = cola->procesos[i];
+        i--;
     }
+    cola->procesos[i + 1] = proceso;
+    cola->tamano++;
 }
 
-Proceso eliminarProceso(ColaPrioridad* cola) {
-    if (cola->frente == NULL) {
-        printf("La cola está vacía.\n");
-        exit(1);
+Proceso desencolar(ColaPrioridad *cola) {
+    if (cola->tamano == 0) {
+        printf("Cola vacía, no se puede desencolar\n");
+        exit(EXIT_FAILURE);
     }
-    Proceso proceso = cola->frente->proceso;
-    Nodo* nodoAEliminar = cola->frente;
-    cola->frente = cola->frente->siguiente;
-    free(nodoAEliminar);
+
+    Proceso proceso = cola->procesos[0];
+    for (int i = 1; i < cola->tamano; i++) {
+        cola->procesos[i - 1] = cola->procesos[i];
+    }
+    cola->tamano--;
     return proceso;
 }
 
-int estaVacia(ColaPrioridad* cola) {
-    return cola->frente == NULL;
+void procesarCola(ColaPrioridad *cola) {
+    while (cola->tamano > 0) {
+        Proceso proceso = desencolar(cola);
+        printf("desencolando proceso -> id:%d prioridad:%d\n", proceso.id, proceso.prioridad);
+    }
+}
+
+void leerProcesosDesdeArchivo(const char *nombreArchivo) {
+    FILE *archivo = fopen(nombreArchivo, "r");
+    if (archivo == NULL) {
+        perror("Error al abrir el archivo");
+        exit(EXIT_FAILURE);
+    }
+
+    ColaPrioridad cola = { .tamano = 0 };
+    int id, prioridad;
+
+    while (fscanf(archivo, "%d %d", &id, &prioridad) != EOF) {
+        Proceso proceso = { .id = id, .prioridad = prioridad };
+        encolar(&cola, proceso);
+
+        if (cola.tamano >= MAX_TAMANO_COLA) {
+            printf("Leyendo los procesos.....\n");
+            procesarCola(&cola);
+        }
+    }
+
+    if (cola.tamano > 0) {
+        printf("Leyendo los procesos...\n");
+        procesarCola(&cola);
+    }
+
+    fclose(archivo);
 }
 
 int main() {
-    FILE* archivo = fopen("C:/Desarrollo/EDD_EX_001/procesos.txt", "r");
-    if (!archivo) {
-        printf("No se pudo abrir el archivo.\n");
-        return 0;
-    }
-
-    ColaPrioridad cola;
-    inicializar(&cola);
-
-    Proceso proceso;
-    while (fscanf(archivo, "%d %d", &proceso.id, &proceso.prioridad) == 2) {
-        agregarProceso(&cola, proceso);
-    }
-
-    while (!estaVacia(&cola)) {
-        Proceso procesoEliminado = eliminarProceso(&cola);
-        printf("ID: %d, Prioridad: %d\n", procesoEliminado.id, procesoEliminado.prioridad);
-    }
-
-    if (fclose(archivo)!= 0) {
-        perror("Error al cerrar el archivo.");
-    }
-
+    leerProcesosDesdeArchivo("C:/Desarrollo/EDD_EX_001/procesos.txt");
     return 0;
 }
