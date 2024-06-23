@@ -25,4 +25,8 @@ int obtener_goles(jugador* jugador) {
     return jugador->goles;
 }
 
+int obtener_sustituciones(jugador* jugador) {
+    return jugador->sustituciones;
+}
+
 #endif
