@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Estructura "modelo" del nodo que se creará definido como "jugador"
+
 typedef struct jugador_nodo {
     char nombre[50];
     int partidos_jugados;
@@ -14,9 +16,14 @@ typedef struct jugador_nodo {
     struct jugador_nodo *anterior;
 } jugador;
 
+
+// Función para crear la lista de cada jugador
+
 void crearjugador_lista(jugador **jugador_lista) {
     *jugador_lista = NULL;
 }
+
+// Función para insertar elementos dentro del nodo de cada jugador
 
 void insertarElem(jugador *jugador_nodo_new, jugador **jugador_lista) {
     if (*jugador_lista == NULL) {
@@ -30,6 +37,8 @@ void insertarElem(jugador *jugador_nodo_new, jugador **jugador_lista) {
         (*jugador_lista)->anterior = jugador_nodo_new;
     }
 }
+
+// Función que nos permite leer el archivo y crear la lista por Jugador
 
 void leerArchivoYCrearLista(const char* filename, jugador **jugador_lista) {
     FILE *file = fopen(filename, "r");
@@ -59,6 +68,21 @@ void leerArchivoYCrearLista(const char* filename, jugador **jugador_lista) {
     }
 
     fclose(file);
+}
+
+// Función para liberar memoria de los nodos utilizados
+
+void liberar_lista(jugador* cabeza) {
+    if (cabeza == NULL) {
+        return;
+    }
+
+    jugador* actual = cabeza;
+    do {
+        jugador* siguiente = actual->siguiente;
+        free(actual);
+        actual = siguiente;
+    } while (actual!= cabeza);
 }
 
 

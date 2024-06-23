@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include "listacircular.h"
 
+
+// Función que permite medir el tamaño de la lista
+
 int tamano_lista(jugador* principal) {
     if (principal == NULL) {
         return 0;
@@ -17,6 +20,7 @@ int tamano_lista(jugador* principal) {
     return tamano;
 }
 
+// Función que permite imprimir la muestra seleccionada en el prompt
 
 void imprimir_muestra(jugador* principal, int indice) {
     if (principal == NULL) {

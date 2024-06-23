@@ -22,12 +22,16 @@ typedef struct {
 } Mano;
 
 // Funciones de manejo de pila
-void creaPila(Carta **pila, int *tamano);
+
+void crear_pila(Carta **pila, int *tamano);
 void apilar(Carta **pila, Carta elem, int *tamano);
 void desapilar(Carta **pila, Carta *elem, int *tamano);
-bool esVacia(Carta *pila, int tamano);
+bool es_vacia(Carta *pila, int tamano);
 
-void inicializarMazo(Carta mazo[NUM_CARTAS]) {
+
+// Funcion que inicializa el mazo de la partida
+
+void inicializar_mazo(Carta mazo[NUM_CARTAS]) {
     char *pintas[] = {"GEN", "IFM", "PRO"};
     char *valores[] = {"CER", "DOS", "CUA", "SEI", "OCH", "DIE", "PHI", "CAR", "FEL", "HUG"};
 
@@ -41,6 +45,9 @@ void inicializarMazo(Carta mazo[NUM_CARTAS]) {
     }
 }
 
+
+// Función que maneja la baraja de cada jugada
+
 void barajar(Carta mazo[NUM_CARTAS]) {
     srand(time(NULL));
     for (int i = 0; i < NUM_CARTAS; i++) {
@@ -51,13 +58,17 @@ void barajar(Carta mazo[NUM_CARTAS]) {
     }
 }
 
-void robarCartas(Carta **pila, int *tamanoPila, Mano *mano) {
+// Función que maneja el robo cartas de cada jugador
+
+void robar_cartas(Carta **pila, int *tamanoPila, Mano *mano) {
     for (int i = 0; i < CARTAS_POR_JUGADOR; i++) {
         desapilar(pila, &mano->cartas[i], tamanoPila);
     }
 }
 
-int valorCarta(char valor[4]) {
+// Función que da valor a cada carta
+
+int valor_cartas(char valor[4]) {
     if (strcmp(valor, "CER") == 0) return 0;
     if (strcmp(valor, "DOS") == 0) return 2;
     if (strcmp(valor, "CUA") == 0) return 4;

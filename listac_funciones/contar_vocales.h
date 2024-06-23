@@ -6,6 +6,8 @@
 #include <ctype.h>
 #include "listacircular.h"
 
+// Función para contar las vocales en la lista circular
+
 int contar_vocales(const char* str) {
     int contador = 0;
     for (int i = 0; str[i]; i++) {
@@ -16,6 +18,8 @@ int contar_vocales(const char* str) {
     }
     return contador;
 }
+
+// Función para calcular el porcentaje de vocales de la lista circular
 
 double calcular_porcentaje_vocales(jugador* principal) {
     if (principal == NULL) {

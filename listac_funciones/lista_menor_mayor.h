@@ -3,6 +3,8 @@
 
 #include "listacircular.h"
 
+// Función que obtiene el valor de los nodos
+
 int obtener_valor(jugador* jugador, int parametro) {
     switch (parametro) {
         case 1: return jugador->partidos_jugados;
@@ -12,6 +14,8 @@ int obtener_valor(jugador* jugador, int parametro) {
         default: return 0;
     }
 }
+
+// Función que nos permite intercambiar los nodos de los Jugadores
 
 void intercambiar_nodos(jugador* a, jugador* b) {
     if (a == b) return;
@@ -37,6 +41,9 @@ void intercambiar_nodos(jugador* a, jugador* b) {
     b->minutos = minutos_temp;
     b->goles = goles_temp;
 }
+
+
+// Función que permite ordenar la lista de los Jugadores
 
 void ordenar_lista(jugador** jugador_lista, int parametro) {
     if (*jugador_lista == NULL) {

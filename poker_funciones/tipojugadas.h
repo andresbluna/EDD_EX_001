@@ -8,8 +8,9 @@
 #include <stdbool.h>
 #include "pilas.h"
 
+// Función que define la mano de profesionales
 
-int esProfesionalesParaTodos(Mano *mano) {
+int profesionales_para_todos(Mano *mano) {
     for (int i = 0; i < CARTAS_POR_JUGADOR; i++) {
         if (strcmp(mano->cartas[i].valor, "PHI") != 0 && strcmp(mano->cartas[i].valor, "CAR") != 0 &&
             strcmp(mano->cartas[i].valor, "FEL") != 0 && strcmp(mano->cartas[i].valor, "HUG") != 0) {
@@ -19,10 +20,13 @@ int esProfesionalesParaTodos(Mano *mano) {
     return 1;
 }
 
-int esEscalaReal(Mano *mano) {
+
+// Función que definev la escala real de cada mano
+
+int escala_real(Mano *mano) {
     int valores[CARTAS_POR_JUGADOR];
     for (int i = 0; i < CARTAS_POR_JUGADOR; i++) {
-        valores[i] = valorCarta(mano->cartas[i].valor);
+        valores[i] = valor_cartas(mano->cartas[i].valor);
     }
     if (valores[0] == valores[1] - 2 && valores[1] == valores[2] - 2 &&
         strcmp(mano->cartas[0].pinta, mano->cartas[1].pinta) == 0 &&
@@ -32,10 +36,12 @@ int esEscalaReal(Mano *mano) {
     return 0;
 }
 
-int esEscalaFalsa(Mano *mano) {
+// Función que define cada mano falsa
+
+int escala_falsa(Mano *mano) {
     int valores[CARTAS_POR_JUGADOR];
     for (int i = 0; i < CARTAS_POR_JUGADOR; i++) {
-        valores[i] = valorCarta(mano->cartas[i].valor);
+        valores[i] = valor_cartas(mano->cartas[i].valor);
     }
     if (valores[0] == valores[1] - 2 && valores[1] == valores[2] - 2) {
         return 1;
@@ -43,8 +49,10 @@ int esEscalaFalsa(Mano *mano) {
     return 0;
 }
 
-int esTrio(Mano *mano) {
-    // Comprobar si hay tres cartas con el mismo valor
+// Función que comprueba si hay tres cartas con el mismo valor
+
+int trio(Mano *mano) {
+
     if (strcmp(mano->cartas[0].valor, mano->cartas[1].valor) == 0 &&
         strcmp(mano->cartas[1].valor, mano->cartas[2].valor) == 0) {
         return 1;
@@ -52,10 +60,12 @@ int esTrio(Mano *mano) {
     return 0;
 }
 
-int esDos(Mano *mano) {
-    if (valorCarta(mano->cartas[0].valor) == valorCarta(mano->cartas[1].valor) ||
-        valorCarta(mano->cartas[0].valor) == valorCarta(mano->cartas[2].valor) ||
-        valorCarta(mano->cartas[1].valor) == valorCarta(mano->cartas[2].valor)) {
+// Función que comprueba si hay dos cartas con el mismo valor
+
+int dos(Mano *mano) {
+    if (valor_cartas(mano->cartas[0].valor) == valor_cartas(mano->cartas[1].valor) ||
+        valor_cartas(mano->cartas[0].valor) == valor_cartas(mano->cartas[2].valor) ||
+        valor_cartas(mano->cartas[1].valor) == valor_cartas(mano->cartas[2].valor)) {
         return 1;
         }
     return 0;

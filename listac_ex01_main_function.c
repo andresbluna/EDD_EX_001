@@ -56,5 +56,7 @@ int main() {
         actual = actual->siguiente;
     } while (actual!= jugador_lista);
 
+    liberar_lista(jugador_lista);
+
     return 0;
 }

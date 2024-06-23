@@ -11,10 +11,10 @@ int main() {
     Carta *pila;
     int tamanoPila = 0;
 
-    inicializarMazo(mazo);
+    inicializar_mazo(mazo);
     barajar(mazo);
 
-    creaPila(&pila, &tamanoPila);
+    crear_pila(&pila, &tamanoPila);
     for (int i = 0; i < NUM_CARTAS; i++) {
         apilar(&pila, mazo[i], &tamanoPila);
     }
@@ -22,9 +22,9 @@ int main() {
     int ganador1 = 0, ganador2 = 0;
     int rondasJugadas = 0;
 
-    while (ganador1 < RONDAS_PARA_GANAR && ganador2 < RONDAS_PARA_GANAR && !esVacia(pila, tamanoPila)) {
+    while (ganador1 < RONDAS_PARA_GANAR && ganador2 < RONDAS_PARA_GANAR && !es_vacia(pila, tamanoPila)) {
         printf("Ronda %d\n", rondasJugadas + 1);
-        jugarRonda(&pila, &tamanoPila, &ganador1, &ganador2);
+        jugar_ronda(&pila, &tamanoPila, &ganador1, &ganador2);
         rondasJugadas++;
     }
 
@@ -41,10 +41,12 @@ int main() {
     return 0;
 }
 
-// Implementación de funciones de manejo de pila
-
-void creaPila(Carta **pila, int *tamano) {
+void crear_pila(Carta **pila, int *tamano) {
     *pila = (Carta *)malloc(NUM_CARTAS * sizeof(Carta));
+    if (*pila == NULL) {
+        perror("Error al asignar memoria para pila");
+        exit(EXIT_FAILURE);
+    }
     *tamano = 0;
 }
 
@@ -56,6 +58,6 @@ void desapilar(Carta **pila, Carta *elem, int *tamano) {
     *elem = (*pila)[--(*tamano)];
 }
 
-bool esVacia(Carta *pila, int tamano) {
+bool es_vacia(Carta *pila, int tamano) {
     return tamano == 0;
 }
