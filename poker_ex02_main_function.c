@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 #include <stdbool.h>
-#include "pilas.h"
-#include "jugar_ronda.h"
+#include "poker_funciones/pilas.h"
+#include "poker_funciones/jugar_ronda.h"
 
 
 int main() {

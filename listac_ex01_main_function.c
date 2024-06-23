@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "contar_vocales.h"
-#include "obtener_promedio.h"
-#include "selector_muestra.h"
-#include "lista_menor_mayor.h"
+#include "listac_funciones/contar_vocales.h"
+#include "listac_funciones/obtener_promedio.h"
+#include "listac_funciones/selector_muestra.h"
+#include "listac_funciones/lista_menor_mayor.h"
 
 
 int main() {
