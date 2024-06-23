@@ -1,6 +1,8 @@
 #include <stdio.h>
-#include "listacircular.h"
 #include "contar_vocales.h"
+#include "obtener_promedio.h"
+#include "selector_muestra.h"
+#include "lista_menor_mayor.h"
 
 
 int main() {

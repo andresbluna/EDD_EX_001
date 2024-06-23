@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "listacircular.h"
 
 int contar_vocales(const char* str) {
     int contador = 0;

@@ -79,6 +79,15 @@
 		<Unit filename="/Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/contar_vocales.h">
 			<Option target="main_function.c"/>
 		</Unit>
+		<Unit filename="/Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/lista_menor_mayor.h">
+			<Option target="main_function.c"/>
+		</Unit>
+		<Unit filename="/Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/obtener_promedio.h">
+			<Option target="main_function.c"/>
+		</Unit>
+		<Unit filename="/Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/selector_muestra.h">
+			<Option target="main_function.c"/>
+		</Unit>
 		<Unit filename="/Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
