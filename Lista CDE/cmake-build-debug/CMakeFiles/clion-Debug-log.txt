@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /Users/imagemaker/Documents/ucm/DEV/EDD_EX_001/Lista CDE Select CMakeLists.txt

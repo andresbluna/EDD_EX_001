@@ -1,3 +1,7 @@
+#ifndef LISTACIRCULAR_H
+#define LISTACIRCULAR_H
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -58,6 +62,8 @@ void leerArchivoYCrearLista(const char* filename, jugador **jugador_lista) {
     fclose(file);
 }
 
+
+#endif
 
 
 

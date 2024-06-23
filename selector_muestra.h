@@ -1,7 +1,7 @@
+#ifndef SELECTOR_MUESTRA_H
+#define SELECTOR_MUESTRA_H
+
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 #include "listacircular.h"
 
 int tamano_lista(jugador* principal) {
@@ -41,3 +41,5 @@ void imprimir_muestra(jugador* principal, int indice) {
            actual->nombre, actual->partidos_jugados, actual->sustituciones, actual->minutos, actual->goles);
 }
 
+
+#endif

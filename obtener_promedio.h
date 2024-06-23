@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+#ifndef OBTENER_PROMEDIO_H
+#define OBTENER_PROMEDIO_H
+
 #include "contar_vocales.h"
 
 float calcular_promedio(jugador* principal, int (*obtener_valor)(jugador*)) {
@@ -25,3 +24,5 @@ float calcular_promedio(jugador* principal, int (*obtener_valor)(jugador*)) {
 int obtener_goles(jugador* jugador) {
     return jugador->goles;
 }
+
+#endif

@@ -1,3 +1,7 @@
+#ifndef CONTAR_VOCALES_H
+#define CONTAR_VOCALES_H
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -32,3 +36,5 @@ double calcular_porcentaje_vocales(jugador* principal) {
 
     return (total_vocales * 100.0) / total_caracteres;
 }
+
+#endif

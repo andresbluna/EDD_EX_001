@@ -1,3 +1,7 @@
+#ifndef LISTA_MENOR_MAYOR_H
+#define LISTA_MENOR_MAYOR_H
+
+
 #include "listacircular.h"
 
 int obtener_valor(jugador* jugador, int parametro) {
@@ -58,3 +62,5 @@ void ordenar_lista(jugador** jugador_lista, int parametro) {
         } while (actual->siguiente != *jugador_lista);
     } while (intercambiado);
 }
+
+#endif
