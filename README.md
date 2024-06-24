@@ -34,3 +34,9 @@ Los programas que probarás acá son:
 
 
 🙏 Muchas gracias!!!
+
+## Integrantes del Equipo
+
+- 👨‍💻 **Diego Figueroa**
+- 👨‍💻 **Fernando Gonzalez**
+- 👨‍💻 **Andrés Luna**
