@@ -14,7 +14,7 @@ Primero que todo, tómate un tiempo, y preparemos el entorno para ejecutar los p
     https://www.jetbrains.com/es-es/clion/download/#section=mac
 
 2.- Una vez bajado puedes hacer clone a nuestro repositorio:
-    HHTPS: git clone https://github.com/andresbluna/EDD_EX_001.git
+       git clone https://github.com/andresbluna/EDD_EX_001.git
 
 3.- Una vez descargado abres con CLION, y puedes comenzar a ejecutar nuestro programa.
     pd:Lo mas probable que antes te pida seleccionar los ejecutables los cuales puedes revisarlos en Edit Configurations/Agregar " + " y ahi seleccionas los earchivos main que son:
