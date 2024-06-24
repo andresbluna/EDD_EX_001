@@ -1,45 +1,42 @@
-# Manual para Configurar Claves SSH en Windows 11 y Enviarlas para Agregar a GitHub
+# 👋 Bienvenido, este proyecto es donde trabajamos con estructuras de datos lineales
 
-## Paso 1: Abrir PowerShell
+Este proyecto se centra en la implementación y análisis de estructuras de datos lineales, abordando desafíos complejos en el procesamiento de grandes volúmenes de datos matemáticos, incluyendo estadísticas. A través de ejemplos prácticos, exploraremos listas circulares doblemente enlazadas con cabeza ficticia, colas de encolamiento y pilas.
 
-1. **Abrir PowerShell**:
-   - En el menú de inicio de Windows 11, busquen "PowerShell" y abran la aplicación.
+## 🛠 Tecnologías Utilizadas
 
-## Paso 2: Generar una Clave SSH
+- **C** && **Python** : 
 
-1. **Generar una nueva clave SSH**:
-   - En la ventana de PowerShell, ejecuten el siguiente comando:
+## 📝 Como bajar y ejecutar el proyecto
 
+Primero que todo, tómate un tiempo, y preparemos el entorno para ejecutar los programas.
 
-ssh-keygen -t rsa -b 4096 -C "su-email@example.com"
+1.- Para tu información, este proyecto fue creado con "CLION" un IDE que puedes descargar en este link:
+    https://www.jetbrains.com/es-es/clion/download/#section=mac
 
-   - Cuando se les pregunte dónde guardar la clave, presionen `Enter` para aceptar la ubicación predeterminada (`C:\Users\su-usuario\.ssh\id_rsa`).
-   - Luego, se les pedirá que ingresen una frase de contraseña. Pueden dejarlo vacío si no desean usar una frase de contraseña, aunque se recomienda por seguridad.
+2.- Una vez bajado puedes hacer clone a nuestro repositorio:
+       git clone https://github.com/andresbluna/EDD_EX_001.git
 
-## Paso 3: Agregar la Clave SSH al ssh-agent
+3.- Una vez descargado abres con CLION, y puedes comenzar a ejecutar nuestro programa.
+    pd:Lo mas probable que antes te pida seleccionar los ejecutables los cuales puedes revisarlos en Edit Configurations/Agregar " + " y ahi seleccionas los earchivos main que son:
 
-1. **Iniciar el ssh-agent en segundo plano**:
-   - Ejecuten el siguiente comando en PowerShell:
-
-
-echo Start-Service ssh-agent
-
-
-2. **Añadir la clave SSH al ssh-agent**:
-   - Ejecuten el siguiente comando en PowerShell:
-
-echo ssh-add C:\Users\su-usuario.ssh\id_rsa
+      a.- listac_ex01_main_function.c
+      b.- poker_ex02_main_function.c
+      c.- procesos_ex03_main_function.c
 
 
-## Paso 4: Copiar la Clave SSH Pública
+Los programas que probarás acá son:
 
-1. **Copiar la clave pública al portapapeles**:
-   - Ejecuten el siguiente comando en PowerShell:
+### Listas Circulares Doblemente Enlazadas con Cabezal Ficticio
 
-sh Get-Content C:\Users\su-usuario.ssh\id_rsa.pub | Set-Clipboard
+### Colas de Encolamiento
+
+### Pilas
 
 
-## Notas Adicionales modofokas
+🙏 Muchas gracias!!!
 
-- **Seguridad**: No compartan su clave privada (`id_rsa`). Solo deben compartir la clave pública (`id_rsa.pub`).
-- **Acceso**: Una vez que la clave pública sea agregada a GitHub, podrán clonar el repositorio y hacer `push` usando SSH.
+## Integrantes del Equipo
+
+- 👨‍💻 **Diego Figueroa**
+- 👨‍💻 **Fernando Gonzalez**
+- 👨‍💻 **Andrés Luna**
