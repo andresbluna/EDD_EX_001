@@ -1,18 +1,37 @@
-# Ejercicio de programación Lineal
+# 👋 Bienvenido, este proyecto es donde trabajamos con estructuras de datos lineales
 
-Las estructuras de datos en la actualidad, son la manera correcta de procesar gran cantidad de datos matemáticos, como estadísticos entre otros, considerando algunos que tardan bastantes días en ser resueltos, con complejidades algorítmicas que resultan ser muy difíciles de procesar aun así para los computadores con mayor capacidad.
-El siguiente trabajo es una muestra de procesos de estructuras de datos de manera líneal, en los cuales procesamos listas circulares doblemente enlazadas con cabezal ficticio, encolamiento de datos y pilas.
-Los ejercicios, nos presentaron un desafío tanto como grupo y en lo personal cada uno con distintas habilidades, logramos avanzar y realizar en conjunto los desafíos propuestos.
-A continuación se detallaran cada una de las partes que contienen estos ejercicios presentados y su posterior solución.
-![image](https://github.com/andresbluna/EDD_EX_001/assets/136276849/19be95be-ecf0-4a73-9c7b-db789c8fa639)
+Este proyecto se centra en la implementación y análisis de estructuras de datos lineales, abordando desafíos complejos en el procesamiento de grandes volúmenes de datos matemáticos, incluyendo estadísticas. A través de ejemplos prácticos, exploraremos listas circulares doblemente enlazadas con cabeza ficticia, colas de encolamiento y pilas.
+
+## 🛠 Tecnologías Utilizadas
+
+- **C** && **Python** : 
+
+## 📝 Como bajar y ejecutar el proyecto
+
+Primero que todo, tómate un tiempo, y preparemos el entorno para ejecutar los programas.
+
+1.- Para tu información, este proyecto fue creado con "CLION" un IDE que puedes descargar en este link:
+    https://www.jetbrains.com/es-es/clion/download/#section=mac
+
+2.- Una vez bajado puedes hacer clone a nuestro repositorio:
+    HHTPS: git clone https://github.com/andresbluna/EDD_EX_001.git
+
+3.- Una vez descargado abres con CLION, y puedes comenzar a ejecutar nuestro programa.
+    pd:Lo mas probable que antes te pida seleccionar los ejecutables los cuales puedes revisarlos en Edit Configurations/Agregar " + " y ahi seleccionas los earchivos main que son:
+
+      a.- listac_ex01_main_function.c
+      b.- poker_ex02_main_function.c
+      c.- procesos_ex03_main_function.c
 
 
-## Características
+Los programas que probarás acá son:
 
-- Lista las características principales del proyecto.
-- Cualquier funcionalidad destacada.
+### Listas Circulares Doblemente Enlazadas con Cabezal Ficticio
 
-## Instalación
+### Colas de Encolamiento
 
-Pasos detallados para instalar el proyecto. Por ejemplo:
+### Pilas
 
+## Licencia
+
+Free licence!!! 
