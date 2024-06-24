@@ -32,6 +32,5 @@ Los programas que probarás acá son:
 
 ### Pilas
 
-## Licencia
 
-Free licence!!! 
+🙏 Muchas gracias!!!
